@@ -2,7 +2,7 @@
 
 A data analysis pipeline which recommends a list of books based on a Goodreads user's reviews, his or her friend's, and the books' average ratings.
 
-*Goodreads, by the way, is a website in which users can sign up and register books to generate library catalogs and reading lists.*
+*Goodreads is a website in which users can sign up and register books to generate library catalogs and reading lists.*
 
 <br/>
 
