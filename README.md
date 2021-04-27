@@ -71,6 +71,6 @@ The `clean_title` function eliminates duplicate books (which might only very sli
 
 #### 4. Recommend books
 
-Execute all the cell to get your final recommendations. You can tweet the relative weight of correlations or ratings in the `correlation_weighted` and `weighted_rating` functions, respectively. 
+Execute all the cell to get your final recommendations. You can tweek the relative weight of correlations or ratings in the `correlation_weighted` and `weighted_rating` functions, respectively. 
 
 *Happy reading!*
