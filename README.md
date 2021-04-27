@@ -1,8 +1,8 @@
 # Goodreads Book Recommender
 
-A data analysis pipeline which recommends a list of books based on a Goodreads user's reviews, his or her friend's, and the books' average ratings.
+A data analysis pipeline which recommends a list of books based on a Goodreads user's reviews, his or her friend's, and the books' average ratings [1].
 
-*Goodreads is a website in which users can sign up and register books to generate library catalogs and reading lists.*
+[1] *Goodreads is a website in which users can sign up and register books to generate library catalogs and reading lists.*
 
 
 
@@ -10,7 +10,7 @@ A data analysis pipeline which recommends a list of books based on a Goodreads u
 
 The Book Recommender suggests which books a [Goodreads](https://www.goodreads.com/) 's user could read next!
 
-To demonstrate, I used my own profile information and selected the profiles of some of my friends and people I follow:
+To demonstrate, I used my own [profile information]() and selected the profiles of some of my friends and people I follow:
 
 
 
@@ -20,24 +20,44 @@ To demonstrate, I used my own profile information and selected the profiles of s
 
 The Recommender now performs the following steps:
 
-1. Extracts user information using Goodread's Web API.
+1. Extracts the user information using Goodread's Web API.
 2. Prepares data for cleaning and analysis.
 3. Cleans and formats book data.
 4. Recommends a list of books.
 
-According to it, these are the books I should read next:
+According to the analysis, these are the books I should read next:
 
+![](https://github.com/FranciscoGalan/Goodreads_Book_Recommender/blob/main/Media/recommended_books_francisco_galan.PNG)
 
+Not bad. These recommendations are based partly on the correlations I have with some of my contacts:
 
+| Contact    | Taste correlation |
+| ---------- | ----------------- |
+| Vanessa    | 1.000000          |
+| Nicolas    | 0.361499          |
+| Andrea     | 0.316139          |
+| Mario      | 0.000000          |
+| Cova       | 0.000000          |
+| Eduardo    | -0.069824         |
+| Fernando   | -0.191663         |
+| Stefan     | -0.244444         |
+| Maria      | -0.291748         |
+| Bill Gates | -0.555556         |
 
+The Book Recommender also considers how high are the mean scores of my friends:
 
-Not bad. These recommendations are based partly on the correlations I have with some of my friends:
-
-
-
-
-
-The Book Recommender also considers how high are the mean scores of my friends. 
+| Contact    | Mean rating | Standard deviation |
+| ---------- | ----------- | ------------------ |
+| Nicolas    | 3.819149    | 0.983332           |
+| Fernando   | 3.931818    | 0.868285           |
+| Cova       | 4.857143    | 0.478091           |
+| Mario      | 3.966102    | 0.927847           |
+| Andrea     | 3.757282    | 0.856815           |
+| Vanessa    | 3.810811    | 1.081294           |
+| Maria      | 3.340909    | 0.914927           |
+| Eduardo    | 4.101796    | 1.015748           |
+| Stefan     | 3.732394    | 0.815762           |
+| Bill Gates | 3.538153    | 0.933014           |
 
 
 
