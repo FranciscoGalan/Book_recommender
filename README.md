@@ -2,11 +2,13 @@
 
 A data analysis pipeline which recommends a list of books based on a Goodreads user's reviews, his or her friend's, and the books' average ratings.
 
+*Goodreads, by the way, is a website in which users can sign up and register books to generate library catalogs and reading lists.*
+
 <br/>
 
 ## What is does
 
-The Book Recommender suggests which books a [Goodreads](https://www.goodreads.com/) 's user could read next! (Goodreads, by the way, is a website in which users can sign up and register books to generate library catalogs and reading lists.)
+The Book Recommender suggests which books a [Goodreads](https://www.goodreads.com/) 's user could read next!
 
 To demonstrate, I used my own [profile information]() and selected the profiles of some of my friends and people I follow. The Recommender now performs the following steps:
 
@@ -19,7 +21,7 @@ According to the analysis, these are the books I should read next:
 
 ![](https://github.com/FranciscoGalan/Goodreads_Book_Recommender/blob/main/Media/recommended_books_francisco_galan.PNG)
 
-Not bad. These recommendations are based partly on the **correlations** I have with some of my contacts. The idea is to find contacts with similar tastes to mine. Such  contacts probably liked books that I will also like. Conversely,  contacts with a negative correlation probably liked books that I won't.
+Not bad. These recommendations are based partly on the **correlations** I have with some of my contacts. The idea is to find contacts with similar tastes to mine. Such  contacts probably liked books that I will also like. Conversely,  contacts with a negative correlation probably liked books that I won't like.
 
 | Contact    | Taste correlation |
 | ---------- | ----------------- |
@@ -34,7 +36,7 @@ Not bad. These recommendations are based partly on the **correlations** I have w
 | Maria      | -0.291748         |
 | Bill Gates | -0.555556         |
 
-The Book Recommender also considers how high are the **mean ratings** of my contacs. This makes sense: if a contact rates most books with two stars, her five-star ratings  should count more than those of a contact that rates most books with five stars.
+The Book Recommender also considers how high are the **mean ratings** of my contacs. This should make sense: if a contact rates most books with two stars, her five-star ratings  should count more than those of a contact that rates most books with five stars.
 
 | Contact    | Mean rating | Standard deviation |
 | ---------- | ----------- | ------------------ |
@@ -67,10 +69,10 @@ You'll have to replace some of the variable names, depending on the users you ch
 
 #### 3. Clean and format data
 
-The `clean_title` function eliminates duplicate books (which might only very slightly in their wording).  I believe it works for most books, but you might consider playing with it if you still get duplicates. 
+The `clean_title` function eliminates duplicate books (which, for example, might only vary slightly in their wording).  I believe it works for most books, but you might consider playing with it if you still get duplicates. 
 
 #### 4. Recommend books
 
-Execute all the cell to get your final recommendations. You can tweek the relative weight of correlations or ratings in the `correlation_weighted` and `weighted_rating` functions, respectively. 
+Execute all the cell to get your final recommendations. You can tweak the relative weight of correlations or ratings in the `correlation_weighted` and `weighted_rating` functions, respectively. 
 
 *Happy reading!*
