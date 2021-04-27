@@ -19,7 +19,7 @@ According to the analysis, these are the books I should read next:
 
 ![](https://github.com/FranciscoGalan/Goodreads_Book_Recommender/blob/main/Media/recommended_books_francisco_galan.PNG)
 
-Not bad. These recommendations are based partly on the correlations I have with some of my contacts. The idea is to find contacts with similar tastes to mine. Such  contacts probably liked books that I will also like. Conversely,  contacts with a negative correlation probably liked books that I won't.
+Not bad. These recommendations are based partly on the **correlations** I have with some of my contacts. The idea is to find contacts with similar tastes to mine. Such  contacts probably liked books that I will also like. Conversely,  contacts with a negative correlation probably liked books that I won't.
 
 | Contact    | Taste correlation |
 | ---------- | ----------------- |
@@ -34,7 +34,7 @@ Not bad. These recommendations are based partly on the correlations I have with 
 | Maria      | -0.291748         |
 | Bill Gates | -0.555556         |
 
-The Book Recommender also considers how high are the mean scores of my contacs. This makes sense: if a contact rates most books with two stars, her five-star ratings  should count more than those of a contact that rates most books with five stars.
+The Book Recommender also considers how high are the **mean ratings** of my contacs. This makes sense: if a contact rates most books with two stars, her five-star ratings  should count more than those of a contact that rates most books with five stars.
 
 | Contact    | Mean rating | Standard deviation |
 | ---------- | ----------- | ------------------ |
