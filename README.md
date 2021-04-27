@@ -19,7 +19,7 @@ According to the analysis, these are the books I should read next:
 
 ![](https://github.com/FranciscoGalan/Goodreads_Book_Recommender/blob/main/Media/recommended_books_francisco_galan.PNG)
 
-Not bad. These recommendations are based partly on the correlations I have with some of my contacts:
+Not bad. These recommendations are based partly on the correlations I have with some of my contacts. The idea is to find contacts with similar tastes to mine. Such  contacts probably liked books that I will also like. Conversely,  contacts with a negative correlation probably liked books that I won't.
 
 | Contact    | Taste correlation |
 | ---------- | ----------------- |
@@ -34,26 +34,26 @@ Not bad. These recommendations are based partly on the correlations I have with 
 | Maria      | -0.291748         |
 | Bill Gates | -0.555556         |
 
-The Book Recommender also considers how high are the mean scores of my contacs:
+The Book Recommender also considers how high are the mean scores of my contacs. This makes sense: if a contact rates most books with two stars, her five-star ratings  should count more than those of a contact that rates most books with five stars.
 
 | Contact    | Mean rating | Standard deviation |
 | ---------- | ----------- | ------------------ |
-| Nicolas    | 3.819149    | 0.983332           |
-| Fernando   | 3.931818    | 0.868285           |
 | Cova       | 4.857143    | 0.478091           |
-| Mario      | 3.966102    | 0.927847           |
-| Andrea     | 3.757282    | 0.856815           |
-| Vanessa    | 3.810811    | 1.081294           |
-| Maria      | 3.340909    | 0.914927           |
 | Eduardo    | 4.101796    | 1.015748           |
+| Mario      | 3.966102    | 0.927847           |
+| Fernando   | 3.931818    | 0.868285           |
+| Nicolas    | 3.819149    | 0.983332           |
+| Vanessa    | 3.810811    | 1.081294           |
+| Andrea     | 3.757282    | 0.856815           |
 | Stefan     | 3.732394    | 0.815762           |
 | Bill Gates | 3.538153    | 0.933014           |
+| Maria      | 3.340909    | 0.914927           |
 
 
 
 ## How to use it
 
-In the [Notebook main.ipynb](https://nbviewer.jupyter.org/github/FranciscoGalan/Goodreads_Book_Recommender/blob/main/main.ipynb) you can find all the steps of the pipeline.
+In the [**Notebook main.ipynb**](https://nbviewer.jupyter.org/github/FranciscoGalan/Goodreads_Book_Recommender/blob/main/main.ipynb) you can find all the steps of the pipeline.
 
 #### 1. Extract users' information
 
